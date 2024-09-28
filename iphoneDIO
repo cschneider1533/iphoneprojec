@@ -1,0 +1,27 @@
++------------------+
+|      iPhone      |
++------------------+
+| - logicaProgram: boolean |
+| - poo: boolean           |
+| - conhecimentos: List<String> |
+| - sistemaOper: String    |
+| - ide: String            |
++------------------+
+| + verificarPreRequisitos(): boolean |
++------------------+
+
+import java.util.List;
+
+public class iPhone {
+    private boolean logicaProgramacao;
+    private boolean poo;
+    private List<String> conhecimentosBasicos;
+    private String sistemaOperacional;
+    private String ide;
+
+    public boolean verificarPreRequisitos() {
+        return logicaProgramacao && poo && conhecimentosBasicos.contains("Java");
+    }
+
+    // Construtor, getters e setters podem ser adicionados aqui
+}
